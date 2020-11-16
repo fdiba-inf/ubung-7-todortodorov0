@@ -9,14 +9,29 @@ public class Triangle {
         System.out.print("Enter n: ");
         int n = input.nextInt();
 
-        for (int line = 1; line <= n; line++) {
-            printLine(1, line);
+        for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= i; j++){
+            if(i==j){
+            System.out.print(j);
+            }
+            else{
+              System.out.print(j + " ");
+            }
+          }
+          System.out.println();
         }
 
-        // Print the bottom part of the triangle that is under the longest line
-    }
+        for (int k = n-1; k >= 1 ; k--){
+          for(int g = 1; g<=k; g++){
+            if(k==g){
+            System.out.print(g);
+            }
+            else{
+              System.out.print(g+ " ");
+            }
+          }
+          System.out.println();
+        } 
 
-    public static void printLine(int start, int end) {
-        // Implement method
     }
 }
