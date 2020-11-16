@@ -13,6 +13,7 @@ public class RecursivePrimePrinter {
     }
 
     public static void printPrimes(int n) {
+        // Implement recursive method
         if(n == 0){
           return;
         } else{
@@ -24,7 +25,8 @@ public class RecursivePrimePrinter {
         }
     }
 
-    public static boolean isPrime(int n)
+    public static boolean isPrime(int n) {
+        // Implement method
         long divider = 2;
         while (divider < n){
           if (n % divider == 0){
@@ -35,4 +37,4 @@ public class RecursivePrimePrinter {
         }
         return true;
     }
-}p
+}
